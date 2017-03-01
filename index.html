@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+</head>
+<body style="background-color:powderblue;">
+	<header>
+		<h1 style="text-align:center;">Calculadora Code Byters</h1>
+	</header>
+	<section style="text-align:center;">
+		<form action="">
+			<label for="name">Nombre</label><br>
+			<input type="text" name="name" required="" /><br><br>
+			
+			<label for="num1">Primer número</label><br>
+			<input type="number" id="num1" required=""/><br><br>
+
+			<label for="lista">Operación</label><br>
+			<select required="" id="operacion">
+				<option value="">Operacion a escoger</option>
+				<option value="1">Adición</option>
+				<option value="2">Sustracción</option>
+				<option value="3">Multiplicación</option>
+				<option value="4">División</option>
+				<option value="5">Potencia</option>
+			</select> <br><br><br>
+			
+			<label for="num2">Segundo número</label><br>
+			<input type="number" id="num2" required=""/><br><br>
+			
+			<p>
+				<input type="submit" name="" value="Operar">
+			</p><br>
+		</form>
+	</section>
+	<section style="text-align: center;">
+		<b>El resultado es:<b>
+		<div id="salida"></div>
+	</section>
+</body>
+</html>
