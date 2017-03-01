@@ -17,27 +17,28 @@
 			<input type="number" id="num1" required=""/><br><br>
 
 			<label for="lista">Operación</label><br>
-			<select required="" id="operacion">
+			<select required="" id="operacion" onclick="operacion(this)">
 				<option value="">Operacion a escoger</option>
 				<option value="1">Adición</option>
 				<option value="2">Sustracción</option>
 				<option value="3">Multiplicación</option>
 				<option value="4">División</option>
 				<option value="5">Potencia</option>
+				<option value="6">Raíz</option>
 			</select> <br><br><br>
 			
 			<label for="num2">Segundo número</label><br>
 			<input type="number" id="num2" required=""/><br><br>
 			
 			<p>
-				<input type="submit" name="" value="Operar">
+				<input type="submit" name="" onclick="operar(event)" value="Operar">
 			</p><br>
 		</form>
 	</section>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 	<section style="text-align: center;">
 		<b>El resultado es:<b>
 		<div id="salida"></div>
 	</section>
-	<script type="text/javascript" src="assets/js/segundo-num.js"></script>
 </body>
 </html>
