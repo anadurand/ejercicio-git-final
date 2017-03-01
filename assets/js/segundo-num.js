@@ -1,8 +1,9 @@
 var num2 = document.getElementById("num2");
 var num1 = document.getElementById("num1");
-var operacion = document.getElementById("operacion");
 var result = 0;
 function operar(num1, num2, operacion){
+  var operacion = document.getElementById("operacion");
+  var op
 
   switch (operacion) {
 

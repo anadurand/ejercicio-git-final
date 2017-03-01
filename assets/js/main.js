@@ -1,34 +1,37 @@
-var name = document.getElementById('name');
-var num1 = document.getElementById('num1').value;
-var num2 = document.getElementById("num2").value;
-var operacion = document.getElementById("operacion");
-var opcion = operacion.options[operacion.selectedIndex].value;
-var result;
-console.log(opcion);
+var result = 0;
+document.getElementById("form").onsubmit=function(e){
+  e.preventDefault();
+}
+function operar(num1, num2){
 
-function operar(num1, num2, opcion){
+  var name = document.getElementById('name');
+  var num1 = parseInt(document.getElementById('num1').value);
+  var num2 = parseInt(document.getElementById("num2").value);
+  var opcion = document.getElementById("operacion").value;
+
+  console.log(opcion);
 
   switch (opcion) {
 
-    case 1:
+    case "1":
               result = suma(num1, num2);
       break;
 
-    case 2:
+    case "2":
               result = resta(num1, num2);
         break;
 
-    case 3:
+    case "3":
               result = multiplicar(num1,num2);
       break;
 
-    case 4:
+    case "4":
               result = dividir(num1, num2);
       break;
-    case 5:
+    case "5":
               result = potencia(num1, num2);
       break;
-    case 6:
+    case "6":
               result = raiz(num1, num2);
       break;
     default:
@@ -39,12 +42,9 @@ function operar(num1, num2, opcion){
 }
 
 function suma (num1, num2){
-  return num1 + num2;
+  return (num1 + num2);
 }
 
 function multiplicar(num1, num2){
   return num1 * num2;
 }
-
-
-

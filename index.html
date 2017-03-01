@@ -9,15 +9,15 @@
 		<h1 style="text-align:center;">Calculadora Code Byters</h1>
 	</header>
 	<section style="text-align:center;">
-		<form action="">
+		<form id="form">
 			<label for="name">Nombre</label><br>
 			<input type="text" name="name" required="" /><br><br>
-			
+
 			<label for="num1">Primer número</label><br>
 			<input type="number" id="num1" required=""/><br><br>
 
 			<label for="lista">Operación</label><br>
-			<select required="" id="operacion" onclick="operacion(this)">
+			<select id="operacion" required>
 				<option value="">Operacion a escoger</option>
 				<option value="1">Adición</option>
 				<option value="2">Sustracción</option>
@@ -26,10 +26,10 @@
 				<option value="5">Potencia</option>
 				<option value="6">Raíz</option>
 			</select> <br><br><br>
-			
+
 			<label for="num2">Segundo número</label><br>
 			<input type="number" id="num2" required=""/><br><br>
-			
+
 			<p>
 				<input type="submit" name="" onclick="operar(event)" value="Operar">
 			</p><br>
