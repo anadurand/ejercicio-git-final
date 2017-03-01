@@ -9,7 +9,7 @@ function operar(num1, num2){
   var num2 = parseInt(document.getElementById("num2").value);
   var opcion = document.getElementById("operacion").value;
 
-  console.log(opcion);
+  //console.log(opcion);
 
   switch (opcion) {
 
@@ -47,4 +47,19 @@ function suma (num1, num2){
 
 function multiplicar(num1, num2){
   return num1 * num2;
+}
+
+function resta (num1, num2){
+  return num1 - num2;
+}
+
+function dividir (num1, num2){
+  return num1 / num2;
+}
+
+function potencia (num1, num2){
+  return Math.pow(num1,num2);
+}
+function raiz (num1, num2){
+  return Math.sqrt(num1, num2);
 }
